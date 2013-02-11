@@ -14,7 +14,7 @@ public class BubbleTests extends TestCase {
 	{
 		BubbleSort bs = new BubbleSort();
 		ArrayMail m = new ArrayMail();
-		int[] values = {1,2,3,4,5};
+		int[] values = {1,2,3,4,5,6,7,8,9};
 		OutputGenerator op = new OutputGenerator(m);
 		m.register(op);
 		bs.sort(values, m);
