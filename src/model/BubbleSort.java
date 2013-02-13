@@ -22,6 +22,12 @@ public class BubbleSort implements BaseSort{
 		{
 			for(int i = 0; i < values.length-1; i++)
 			{
+				try {
+					Thread.sleep(1);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				if(values[i]>values[i+1])
 				{
 					int temp = values[i];

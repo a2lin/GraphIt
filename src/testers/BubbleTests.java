@@ -12,14 +12,12 @@ public class BubbleTests extends TestCase {
 	
 	public void testIsSorted()
 	{
-		
 		ArrayMail m = new ArrayMail();
 		BubbleSort bs = new BubbleSort(m);
 		int[] values = {1,2,3,4,5,6,7,8,9};
 		OutputGenerator op = new OutputGenerator(m);
 		m.register(op);
 		bs.sort(values, m);
-		
 	}
 	
 	private void printArray(int[] acs)

@@ -12,11 +12,10 @@ public class GraphDriver implements ArrayListener {
 		GraphDriver gd = new GraphDriver();
 	    JFrame frame = new JFrame("GraphIt");
 	    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	    frame.setSize(600,600);
+	    frame.setSize(615,640);
 
-	    
-	    int[] blah = {100,200,300,400};
-	    gd.panel.setArray(blah);
+	    frame.setContentPane(gd.panel);
+	    frame.setVisible(true);
 	  
 	    int[] thisArray = new int[600];
 	    for(int i = 0; i < thisArray.length; i++)
@@ -28,8 +27,6 @@ public class GraphDriver implements ArrayListener {
 	    bubble.sort(thisArray,gd.arr);
 
 
-	    frame.setContentPane(gd.panel);
-	    frame.setVisible(true);
 	  }
 
 	@Override
