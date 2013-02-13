@@ -4,10 +4,16 @@ import java.util.*;
 import controller.*;
 import java.util.Collections;
 
-public class BubbleSort implements ArrayListener,BaseSort{
+public class BubbleSort implements BaseSort{
 	private int[] values;
-	@Override
+	ArrayMail arr;
+
+	public BubbleSort(ArrayMail arr)
+	{
+		this.arr = arr;
+	}
 	
+	@Override
 	public void sort(int[] origValues, ArrayMail m) {
 		//Implementation of Selection Sort
 		this.values = origValues;
@@ -42,8 +48,5 @@ public class BubbleSort implements ArrayListener,BaseSort{
 		}
 		System.out.println("");
 	}
-	@Override
-	public void notifyThis() {
-		System.out.println(values);	
-	}
+
 }
