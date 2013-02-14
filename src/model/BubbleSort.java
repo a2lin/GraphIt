@@ -47,11 +47,6 @@ public class BubbleSort implements BaseSort{
 			values[i] = values[switchLocation];
 			values[switchLocation] = temp;
 		}
-		System.out.println("===============");
-		for(int i = 0; i < values.length; i++)
-		{
-			System.out.print(values[i]);
-		}
 		System.out.println("");
 	}
 

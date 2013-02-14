@@ -5,7 +5,7 @@ import javax.swing.*;
 
 public class MainDisplay extends JPanel{
 
-	int[] currentInts;
+	int[] currentInts={0};
 
   public MainDisplay(){
     super();
@@ -22,7 +22,6 @@ public class MainDisplay extends JPanel{
 	  for(int i = 0; i < currentInts.length; i++)
 	  {
 		  g.drawLine(i, 0, i, currentInts[i]);
-		  System.out.println("hi");
 	  }
   }
 
